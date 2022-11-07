@@ -8,7 +8,7 @@ PROJECT_NAME           = rwa2_group13
 PROJECT_NUMBER         = 0.1
 PROJECT_BRIEF          = "robot solving a 2D maze with wall following algorithm"
 PROJECT_LOGO           =
-OUTPUT_DIRECTORY       = "/Users/disha/Documents/ENPM-809Y/RWA 2/FALL2022_RWA2/rwa2_group13/etc"
+OUTPUT_DIRECTORY       = "../documentation"
 CREATE_SUBDIRS         = NO
 CREATE_SUBDIRS_LEVEL   = 8
 ALLOW_UNICODE_NAMES    = NO
@@ -121,7 +121,7 @@ WARN_LOGFILE           =
 #---------------------------------------------------------------------------
 # Configuration options related to the input files
 #---------------------------------------------------------------------------
-INPUT                  = "/Users/disha/Documents/ENPM-809Y/RWA 2/FALL2022_RWA2/rwa2_group13/application/"
+INPUT                  = "../application/"
 INPUT_ENCODING         = UTF-8
 INPUT_FILE_ENCODING    =
 FILE_PATTERNS          = *.c \
