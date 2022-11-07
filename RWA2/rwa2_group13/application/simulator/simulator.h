@@ -17,18 +17,22 @@
 
 #include <string>
 
-
-class Simulator {
- public:
+/**
+ * @brief Simulator class implements the necessary functions to control the robot and get information on the maze.
+ *
+ */
+class Simulator
+{
+public:
   /**
-   * @brief 
+   * @brief
    * Compute the width of the maze.
    *
    * @return int Width of the maze.
    */
   static int mazeWidth();
   /**
-   * @brief 
+   * @brief
    * Compute the height of the maze.
    *
    * @return int Height of the maze.
@@ -36,7 +40,7 @@ class Simulator {
   static int mazeHeight();
 
   /**
-   * @brief 
+   * @brief
    * Check if there is a wall in front of the robot.
    *
    * @return true
@@ -44,7 +48,7 @@ class Simulator {
    */
   static bool wallFront();
   /**
-   * @brief 
+   * @brief
    * Check if there is a wall to the right of the robot.
    *
    * @return true
@@ -52,7 +56,7 @@ class Simulator {
    */
   static bool wallRight();
   /**
-   * @brief 
+   * @brief
    * Check if there is a wall to the left of the robot.
    *
    * @return true
@@ -60,14 +64,14 @@ class Simulator {
    */
   static bool wallLeft();
   /**
-   * @brief 
+   * @brief
    * Move the robot forward.
    *
    * @param distance Distance (number of cell) to move forward.
    */
   static void moveForward(int distance = 1);
   /**
-   * @brief 
+   * @brief
    * Turn the robot right.
    *
    */
@@ -78,7 +82,7 @@ class Simulator {
    */
   static void turnLeft();
   /**
-   * @brief 
+   * @brief
    * Set a wall at the given coordinates.
    *
    * @param x X coordinate of the cell.
@@ -87,7 +91,7 @@ class Simulator {
    */
   static void setWall(int x, int y, char direction);
   /**
-   * @brief 
+   * @brief
    * Remove a wall at the given coordinates.
    *
    * @param x X coordinate of the cell.
@@ -97,7 +101,7 @@ class Simulator {
    */
   static void clearWall(int x, int y, char direction);
   /**
-   * @brief 
+   * @brief
    * Set the color of the cell at the given coordinates.
    *
    * @param x X coordinate of the cell.
@@ -106,33 +110,33 @@ class Simulator {
    * 'c' (cyan), 'g' (green), 'o' (orange), 'r' (red), 'w' (white), 'y' (yellow)
    * 'B' (dark blue), 'C' (dark cyan), 'A' (dark gray), 'G' (dark green),
    * 'R' (dark green), 'Y' (dark yellow).
+   * 
    */
   static void setColor(int x, int y, char color);
   /**
-   * @brief 
+   * @brief
    * Clear the color of the cell at the given coordinates.
-   *
-   * @return int X coordinate of the cell.
-   * @return int Y coordinate of the cell.
+   * 
    */
   static void clearColor(int x, int y);
   /**
-   * @brief 
+   * @brief
    * Clear the color of all cells in the maze.
+   * 
    */
   static void clearAllColor();
 
   /**
-   * @brief 
+   * @brief
    * Set the text in a cell at the given coordinates.
    *
    * @param x X coordinate of the cell.
    * @param y Y coordinate of the cell.
    * @param text Text to display in the cell.
    */
-  static void setText(int x, int y, const std::string& text);
+  static void setText(int x, int y, const std::string &text);
   /**
-   * @brief 
+   * @brief
    * Clear the text in a cell at the given coordinates.
    *
    * @param x X coordinate of the cell.
@@ -140,13 +144,13 @@ class Simulator {
    */
   static void clearText(int x, int y);
   /**
-   * @brief 
+   * @brief
    * Clear the text in all cells of the maze.
    *
    */
   static void clearAllText();
   /**
-   * @brief 
+   * @brief
    * Check wether or not the reset button has been pressed.
    *
    * @return true
@@ -154,7 +158,7 @@ class Simulator {
    */
   static bool wasReset();
   /**
-   * @brief 
+   * @brief
    * Moves the robot back to the starting position.
    */
   static void ackReset();

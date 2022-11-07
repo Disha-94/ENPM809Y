@@ -2,10 +2,8 @@
 #include "../simulator/simulator.h"
 
 #include <iostream>
-#include <utility>
 #include <ctime>    //for random number seed
 
-#include <unistd.h>
 //---------------------------------------------------------------------
 /**
  * @brief 

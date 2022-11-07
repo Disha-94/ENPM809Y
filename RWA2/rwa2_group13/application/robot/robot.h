@@ -1,5 +1,5 @@
-#ifndef __ALGORITHM__h
-#define __ALGORITHM__H
+#ifndef __ROBOT__H
+#define __ROBOT__H
 
 /**
  * @file algorithm.h
@@ -26,6 +26,10 @@ namespace rwa2group13
         int x;
         int y;
         char dir;
+        coordinates():
+        	x{0},
+        	y{0},
+        	dir{'n'} {}
     };
     /**
      * @brief 

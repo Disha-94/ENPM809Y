@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['turnleft_0',['turnLeft',['../class_simulator.html#ab103b5780fb3102441270df9c006e435',1,'Simulator']]],
-  ['turnright_1',['turnRight',['../class_simulator.html#af3e20b66f7372a26639a2ecf6f881490',1,'Simulator']]]
+  ['generate_5fgoal_0',['generate_goal',['../classrwa2group13_1_1_algorithm.html#a2af2bc2d6c3987a9476c6333857f9eb2',1,'rwa2group13::Algorithm']]],
+  ['get_5fgoal_1',['get_goal',['../classrwa2group13_1_1_algorithm.html#aed9b1236f063b40e8f412a31895c4a16',1,'rwa2group13::Algorithm']]]
 ];

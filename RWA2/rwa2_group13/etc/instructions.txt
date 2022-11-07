@@ -2,7 +2,7 @@
 ------------------------------------------------------------------------
 Build the application
 ------------------------------------------------------------------------
-g++ -std=c++17 -g main.cpp simulator/simulator.cpp algorithm/algorithm.cpp robot/robot.cpp -o main
+g++ -std=c++17 -g main.cpp simulator/simulator.cpp algorithm/algorithm.cpp robot/robot.cpp cell/cell.cpp -o main
 
 ------------------------------------------------------------------------
 To switch between left-hand rule approach and right-hand rule approach
@@ -13,7 +13,8 @@ main function runs a function called run_left() or run_right() based on the comm
 Pass either of the below command line arguments to run right-hand rule.
 '-right', 'right', 'r', 'R'
 
-Pass any command line arguments excluding the above ones or don't pass any command line arguments to run left-hand rule.
+Pass either of the below command line arguments to run left-hand rule.
+'-left', 'left', 'l', 'L'
 
 
 Run Command in simulator - 
@@ -22,9 +23,7 @@ Run Command in simulator -
 ./main r
 ./main R
 
-./main
 ./main -left
 ./main left
 ./main l
 ./main L
-./main <anything>

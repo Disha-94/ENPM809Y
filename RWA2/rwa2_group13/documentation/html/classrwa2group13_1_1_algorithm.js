@@ -7,9 +7,6 @@ var classrwa2group13_1_1_algorithm =
     [ "init_outer_walls", "classrwa2group13_1_1_algorithm.html#aeaf3da26de0ff77442d12df41654bb92", null ],
     [ "run_left", "classrwa2group13_1_1_algorithm.html#a1346f25497699d330788c8313e2862b5", null ],
     [ "run_right", "classrwa2group13_1_1_algorithm.html#af5077fd61ec9a96376eff0a3fb3e6bb5", null ],
-    [ "set_front_wall", "classrwa2group13_1_1_algorithm.html#a3361e850494ce8a10118b96372e7c44c", null ],
-    [ "set_left_wall", "classrwa2group13_1_1_algorithm.html#af8dc00a62fb5561f683af0ebe05561af", null ],
-    [ "set_right_wall", "classrwa2group13_1_1_algorithm.html#a25697ef0000716f9002d52aa2348248e", null ],
     [ "wall_follow_left", "classrwa2group13_1_1_algorithm.html#afe13e25e8360872b15492e655acf24b0", null ],
     [ "wall_follow_right", "classrwa2group13_1_1_algorithm.html#a448347639d2fe0b5ec19faa158ae2692", null ]
 ];

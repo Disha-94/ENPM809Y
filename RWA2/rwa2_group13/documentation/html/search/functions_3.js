@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['setcolor_0',['setColor',['../class_simulator.html#ae77656a3dea16067d95ca727c36afaab',1,'Simulator']]],
-  ['settext_1',['setText',['../class_simulator.html#aa033cf7d80338a24678b95ec6f69b371',1,'Simulator']]],
-  ['setwall_2',['setWall',['../class_simulator.html#aa0e3277ba6aeba683eb5888ba637a477',1,'Simulator']]]
+  ['forward_0',['forward',['../classrwa2group13_1_1_robot.html#a857c366863ece46503f4388399ed33c1',1,'rwa2group13::Robot']]]
 ];

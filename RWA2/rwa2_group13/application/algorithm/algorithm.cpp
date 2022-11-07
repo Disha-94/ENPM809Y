@@ -1,11 +1,10 @@
 #include "algorithm.h"
 #include "../simulator/simulator.h"
+#include "../robot/robot.h"
+#include "../cell/cell.h"
 
 #include <iostream>
-#include <utility>
 #include <ctime> //for random number seed
-#include "../robot/robot.h"
-#include <unistd.h>
 
 namespace rwa2group13
 {
@@ -65,14 +64,14 @@ namespace rwa2group13
     void Algorithm::get_goal()
     {
         std::cerr << "The goal is: " << std::endl;
-        std::cerr << "(" << goal.x << ", " << goal.y << ")";        //print goal coordinates
+        std::cerr << "(" << goal.x << ", " << goal.y << ")\n";        //print goal coordinates
         std::cerr << std::endl;
-        sleep(2);
     }
 
     void Algorithm::run_left()
     {
         generate_goal();                     
+        get_goal();
         init_outer_walls();
         wall_follow_left();
     }
@@ -80,13 +79,13 @@ namespace rwa2group13
     void Algorithm::run_right()
     {
         generate_goal();
+        get_goal();
         init_outer_walls();
         wall_follow_right();
     }
 
     void Algorithm::wall_follow_left()
     {
-        direction = "nwse";
         coordinates pos;
         coordinates temp_pos;
         pos.x = 0;
@@ -96,6 +95,7 @@ namespace rwa2group13
         while ((pos.x != goal.x) or (pos.y != goal.y))
         {
             Simulator::setColor(pos.x, pos.y, 'c');
+            Cell::init_cell_walls(pos);
             if (!Simulator::wallLeft())
             {
                 pos = Robot::left(pos);
@@ -135,7 +135,6 @@ namespace rwa2group13
 
     void Algorithm::wall_follow_right()
     {
-        direction = "nwse";
         coordinates pos;
         coordinates temp_pos;
         pos.x = 0;
@@ -145,6 +144,7 @@ namespace rwa2group13
         while ((pos.x != goal.x) or (pos.y != goal.y))
         {
             Simulator::setColor(pos.x, pos.y, 'c');
+            Cell::init_cell_walls(pos);
             if (!Simulator::wallRight())
             {
                 pos = Robot::right(pos);
@@ -189,10 +189,10 @@ namespace rwa2group13
         Simulator::setColor(pos.x, pos.y, 'r');
         path.pop_back();
         path.pop_back();
-        std::cerr << "PATH" << std::endl;
+        std::cerr << "Path back to (0,0) is:" << std::endl;
         for (int i = path.size() - 1; i >= 0; i--)
         {
-            std::cerr << path.at(i).x << "  " << path.at(i).y << std::endl;
+            std::cerr << "(" << path.at(i).x << ", " << path.at(i).y << ")\n";
         }
         for (int i = path.size() - 1; i >= 0; i--)
         {

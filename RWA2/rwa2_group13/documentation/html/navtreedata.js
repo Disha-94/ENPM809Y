@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "rwa2", "index.html", [
+  [ "rwa2_group13", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -41,7 +41,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"algorithm_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

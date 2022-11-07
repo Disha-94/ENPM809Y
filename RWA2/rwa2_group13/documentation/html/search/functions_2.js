@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['mazeheight_0',['mazeHeight',['../class_simulator.html#a3e1a7230da3821cbc06924d4f3f71ece',1,'Simulator']]],
-  ['mazewidth_1',['mazeWidth',['../class_simulator.html#a3880464920ff0e7e5d72d7d610357a75',1,'Simulator']]],
-  ['moveforward_2',['moveForward',['../class_simulator.html#a0ac8075a09d517a4538dea7d70b80e55',1,'Simulator']]]
+  ['clearallcolor_0',['clearAllColor',['../class_simulator.html#ab67597b50f274e6c03f7913d86cbd696',1,'Simulator']]],
+  ['clearalltext_1',['clearAllText',['../class_simulator.html#a18566704e048a3e23df215df4055b44f',1,'Simulator']]],
+  ['clearcolor_2',['clearColor',['../class_simulator.html#ab7f4460016c5277c2c907ae7af9356f7',1,'Simulator']]],
+  ['cleartext_3',['clearText',['../class_simulator.html#af15a2139f85767d6fd937f5976bdacad',1,'Simulator']]],
+  ['clearwall_4',['clearWall',['../class_simulator.html#a2fcf77e77429b746a1a397de3b19267a',1,'Simulator']]]
 ];

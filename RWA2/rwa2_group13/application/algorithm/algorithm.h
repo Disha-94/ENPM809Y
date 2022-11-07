@@ -1,4 +1,4 @@
-#ifndef __ALGORITHM__h
+#ifndef __ALGORITHM__H
 #define __ALGORITHM__H
 
 /**
@@ -28,25 +28,18 @@ namespace rwa2group13
     class Algorithm
     {
     private:
-        // optimized path is stored sequentially
-        std::vector<std::pair<int, int>> m_position_vector;
-
-        // stores the coordinates of goals.
-        coordinates goal;
-
-        std::string direction = "nwse";
-        int cur_dir = 0;
-
-        std::vector<coordinates> path;
-
-        bool temp = false;
+        coordinates goal; //stores the coordinates of goal
+        std::vector<coordinates> path; //backtrack path stored in co-ordinates forms
+        bool temp; //temporary variable to know if temp data is stored or cleared
 
     public:
         /**
          * @brief Constructor
          *
          */
-        Algorithm() : goal{0, 0} {}
+        Algorithm():
+        	path{},
+        	temp{false} {}
 
         /**
          * @brief 
@@ -93,27 +86,6 @@ namespace rwa2group13
          * @return
          */
         void generate_goal();
-
-        /**
-         * @brief 
-         * sets right wall w.r.t. robot as red
-         *
-         */
-        void set_right_wall();
-
-        /**
-         * @brief 
-         * sets left wall w.r.t. robot as red
-         *
-         */
-        void set_left_wall();
-
-        /**
-         * @brief 
-         * sets front wall w.r.t. robot as red
-         *
-         */
-        void set_front_wall();
 
         /**
          * @brief 
